@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uma surpresa para você ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #180b18, #4a1638, #170b22);
+  color: white;
+  text-align: center;
+}
+
+.tela {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.caixa {
+  width: 100%;
+  max-width: 650px;
+  background: rgba(255,255,255,0.10);
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(255,105,180,0.25);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  margin: 15px 0;
+  font-size: 17px;
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: 14px 25px;
+  border-radius: 20px;
+  background: #ff6fae;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.03);
+}
+
+.escondido {
+  display: none;
+}
+
+.fotos {
+  display: grid;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.foto {
+  background: rgba(255,255,255,0.08);
+  padding: 12px;
+  border-radius: 20px;
+}
+
+.foto img {
+  width: 100%;
+  border-radius: 15px;
+  display: block;
+}
+
+.legenda {
+  margin: 12px 5px 5px;
+  font-size: 16px;
+}
+
+.carta {
+  margin-top: 30px;
+  text-align: left;
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.final {
+  margin-top: 30px;
+  font-size: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- SENHA -->
+<div id="inicio" class="tela">
+  <div class="caixa">
+    <h1>🔐 Uma última pista...</h1>
+
+    <p>
+      Se você chegou até aqui,<br>
+      talvez esteja pronto para descobrir sua recompensa. ❤️
+    </p>
+
+    <input id="senha" type="password" placeholder="Digite a senha">
+
+    <button onclick="entrar()">Abrir minha surpresa 💗</button>
+
+    <p id="erro" class="escondido">
+      Hmm... tenta de novo, piranha 😂❤️
+    </p>
+  </div>
+</div>
+
+<!-- SURPRESA -->
+<div id="surpresa" class="tela escondido">
+  <div class="caixa">
+
+    <h1>Você conseguiu! 🥹❤️</h1>
+
+    <p>
+      Depois de todas aquelas pistas,<br>
+      finalmente chegou ao fim da caça ao tesouro...
+    </p>
+
+    <p>
+      Mas a verdadeira recompensa está aqui. 💕
+    </p>
+
+    <!-- FOTOS -->
+    <div class="fotos">
+
+      <div class="foto">
+        <img src="https://placehold.co/800x500/35152f/ffffff?text=Foto+1" alt="Foto 1">
+        <p class="legenda">
+          Foi aqui que mais uma das minhas histórias favoritas começou… ❤️
+        </p>
+      </div>
+
+      <div class="foto">
+        <img src="https://placehold.co/800x500/42182f/ffffff?text=Foto+2" alt="Foto 2">
+        <p class="legenda">
+          E, sem perceber, você foi se tornando uma das pessoas mais importantes da minha vida. 🥹
+        </p>
+      </div>
+
+      <div class="foto">
+        <img src="https://placehold.co/800x500/51203d/ffffff?text=Foto+3" alt="Foto 3">
+        <p class="legenda">
+          Se eu pudesse guardar um sentimento para sempre, seria a felicidade de ter você comigo. 💕
+        </p>
+      </div>
+
+    </div>
+
+    <br>
+
+    <button onclick="mostrarCarta()">
+      Tem mais uma coisa... 💌
+    </button>
+
+    <!-- CARTA -->
+    <div id="carta" class="carta escondido">
+
+      <h2>Para minha Piranha ❤️</h2>
+
+      <p>
+        Piranha, você é a minha alma gêmea. ❤️
+      </p>
+
+      <p>
+        Eu queria que essa surpresa fosse diferente.
+        Queria que, depois de todas as pistas, você chegasse até aqui
+        e percebesse que o verdadeiro prêmio nunca foi uma coisa.
+        Sempre foi você.
+      </p>
+
+      <p>
+        Foram 7 pistas para chegar até aqui,
+        mas nenhuma delas conseguiria explicar tudo aquilo que eu sinto por você.
+      </p>
+
+      <p>
+        Você conseguiu transformar momentos simples em lembranças
+        que eu quero guardar para sempre.
+        E, de alguma forma, deixou meus dias muito mais especiais
+        só por fazer parte deles.
+      </p>
+
+      <p>
+        Se eu pudesse voltar ao começo de tudo,
+        eu escolheria viver cada momento novamente.
+        Eu te escolheria de novo.
+        Em qualquer caça ao tesouro.
+        Em qualquer caminho.
+        Em qualquer lugar. ❤️
+      </p>
+
+      <p>
+        Obrigada por ser você,
+        por ser meu parceiro nessa história
+        e por ser a minha pessoa.
+      </p>
+
+      <p>
+        Espero que, quando você olhar para essa surpresa,
+        lembre que existe uma Ursinha aqui
+        que gosta de você mais do que consegue colocar em palavras. 🐻❤️
+      </p>
+
+      <p>
+        Com todo o amor da sua Ursinha. 🐻❤️
+      </p>
+
+    </div>
+
+    <p class="final">
+      🐻❤️ Você encontrou a recompensa.
+    </p>
+
+  </div>
+</div>
+
+<script>
+function entrar() {
+  const senha = document.getElementById("senha").value;
+
+  if (senha.toLowerCase() === "amor") {
+    document.getElementById("inicio").classList.add("escondido");
+    document.getElementById("surpresa").classList.remove("escondido");
+  } else {
+    document.getElementById("erro").classList.remove("escondido");
+  }
+}
+
+function mostrarCarta() {
+  document.getElementById("carta").classList.remove("escondido");
+}
+</script>
+
+</body>
+  </html>
